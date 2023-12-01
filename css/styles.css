@@ -1,22 +1,22 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f8f5f2;
-    color: #333;
+    background-color: #fde3a7; /* Creamy background */
+    color: #6b4226; /* Dark brown text color */
     text-align: center;
 }
 
 header {
-    background-color: #c94c4c;
+    background-color: #d34c4c; /* Spicy red */
     color: #fff;
     text-align: center;
     padding: 1em;
 }
 
 nav {
-    background-color: #ddb99b;
+    background-color: #e4b993; /* Warm beige */
     padding: 0.5em;
 }
 
@@ -29,54 +29,43 @@ ul {
 }
 
 li {
-    margin: 0 1em;
+    margin: 0 1.5em;
 }
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #6b4226; /* Dark brown text color */
     font-weight: bold;
+    font-size: 1.2em; /* Slightly larger font size */
 }
 
 .hero {
     text-align: center;
     padding: 2em;
+    background-color: #e4b993; /* Warm beige */
+    border-bottom: 8px solid #6b4226; /* Dark brown border */
 }
 
 .hero img {
-    max-width: 60%;
+    max-width: 50%; /* Larger image size */
     height: auto;
-    border-radius: 8px;
+    border-radius: 12px; /* More rounded corners */
 }
 
-.hero-text {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #ffffff;
+.hero h2,
+.hero p {
+    color: #6b4226; /* Dark brown text color */
 }
-
-.hero-text h2 {
-    font-size: 4.5em;
-    background-color: #333;
-}
-
-.hero-text p {
-    font-size: 2.2em;
-    background-color: #333;
-}
-
 
 section {
-    padding: 2em;
+    padding: 3em;
 }
 
 footer {
     text-align: center;
-    color: #000000;
+    color: #6b4226; /* Dark brown text color */
     padding: 1em;
+    background-color: #e4b993; /* Warm beige */
 }
 
 /* Add this style for centering */
@@ -91,8 +80,9 @@ footer {
 }
 
 .menu-item img {
-    width: 400px; /* Make sure images fill the container */
-    border-radius: 8px; /* Add a border radius for a rounded look */
+    width: 450px; /* Slightly larger images */
+    height: 500px;
+    border-radius: 12px; /* More rounded corners */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -100,20 +90,56 @@ footer {
 
 .menu-item-details {
     padding: 1em;
+    background-color: #fde3a7; /* Creamy background */
+
 }
 
 /* Add this style for navigation arrows */
 .slick-prev,
 .slick-next {
-    font-size: 24px;
-    color: #333;
+    font-size: 28px; /* Larger arrow size */
+    color: #6b4226; /* Dark brown text color */
 }
 
 .slick-prev {
-    left: -30px;
+    left: -40px; /* Further left position */
 }
 
 .slick-next {
-    right: -30px;
+    right: -40px; /* Further right position */
 }
 
+#contact {
+    text-align: center;
+    padding: 3em;
+}
+
+#contact h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.contact-info {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info a {
+    margin: 0 1em;
+}
+
+.contact-info img {
+    width: 50px; /* Adjust the size as needed */
+    border-radius: 50%; /* Make circular images */
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-info a:hover {
+    transform: scale(1.2); /* Enlarge images on hover */
+}
