@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiv's Humble Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <h1>Shiv's Humble Home</h1>
+        <p>Experience the Flavors of India</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+    <section class="hero">
+        <img src="img/home_dish.jpg" alt="Delicious Indian Dish">
+        <div class="hero-text">
+            <h2>Discover Authentic Indian Cuisine</h2>
+            <p>Indulge in a culinary journey with our rich and flavorful dishes.</p>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <p>Explore our delightful menu featuring a variety of authentic Indian dishes.</p>
+        <section id="menu">
+            
+            <div class="menu-carousel">
+                <div class="menu-item">
+                    <img src="img/menu1.jpg" alt="Dish 1">
+                    <div class="menu-item-details">
+                        <h3>Dishwasher Salmon</h3>
+                        <p>
+                            Elevate your culinary adventure with dishwasher salmon, a gourmet sensation that transforms salmon fillets into a succulent masterpiece, enveloped in a symphony of flavors and culinary creativity.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="img/menu2.jpg" alt="Dish 2">
+                    <div class="menu-item-details">
+                        <h3>Ramen</h3>
+                        <p>Ramen with Balogna Slice</p>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="img/menu3.jpg" alt="Dish 3">
+                    <div class="menu-item-details">
+                        <h3>Whatever the Fuck this is</h3>
+                        <p>A mouthwatering... Dish that needs no discription</p>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="img/menu4.jpg" alt="Dish 4">
+                    <div class="menu-item-details">
+                        <h3>Shiv's Kush</h3>
+                        <p>Smokey Ganja hand picked from Shiv's Plantation</p>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="img/menu5.jpg" alt="Dish 5">
+                    <div class="menu-item-details">
+                        <h3>Lemon Manko Sandwich</h3>
+                        <p>Dont Get this Shit</p>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="img/menu6.jpg" alt="Dish 6">
+                    <div class="menu-item-details">
+                        <h3>Spicy Dish 2</h3>
+                        <p>Another tempting description for Dish 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                
+                <!-- Add more menu items as needed -->
+            </div>
+        </section>        
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Reach out to us for reservations, inquiries, or any other information.</p>
+        <!-- Add your contact information and a form if needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Shiv's Humble Home. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('.menu-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+      
+</body>
+</html>
